@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <form id="container" name="container">
+        <h1 id="title">Number Guessing Game</h1>
+        <p id="desc">The computer has chosen a number between 1 to 100.
+        Try your luck and guess it!</p>
+        <input type="number" placeholder="Place Your Guess Here" name="userInput" id="guess"><br><br>
+        <p class="hide" id="result">Sample Text</p>
+        <p class="hide" id="rec">Sample Text</p>
+        <input id="guessButton" type="button" value="Guess" onclick="guessNumber()">
+        <input id="tryAgainButton" class="hide" type="button" value="Try Again" onclick="reloadPage()">
+        <p id="choiceText">Difficulties:</p>
+        <input class="btn" id="easy" type="button" value="Easy" onclick="setEasy()">
+        <input class="btn" id="normal" type="button" value="Normal" onclick="setNormal()">
+        <input class="btn" id="hard" type="button" value="Hard" onclick="setHard()">
+        <input class="btn" id="veryHard" type="button" value="Very Hard" onclick="setVeryHard()">
+        <input class="btn" id="insane" type="button" value="Insane" onclick="setInsane()">
+    </form>
+    
+</body>
+</html>
